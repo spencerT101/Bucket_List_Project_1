@@ -1,5 +1,5 @@
 import unittest
-#from test_modules.test_game import TestGame
+from test_modules.test_bucket_list import TestGame
 #from test_modules.test_player import TestPlayer
 
 
