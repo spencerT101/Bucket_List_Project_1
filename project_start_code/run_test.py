@@ -1,10 +1,10 @@
 import unittest
-from test_modules.test_bucket_list import TestGame
-#from test_modules.test_player import TestPlayer
+from test_models.test_destination import TestDestination
+from test_models.test_country import TestCountry
+from test_models.test_bucket_list import TestBucketList
 
 
 if __name__== "__main__":
     unittest.main()
 
 
-app = Flask(__name__)
