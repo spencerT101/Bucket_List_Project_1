@@ -1,5 +1,6 @@
-class Bucket_list:
+class BucketList:
 
-    def __init__(self, destination):
+    def __init__(self, destination, id = None):
         self.destination = destination
+        self.id = id
     

@@ -1,5 +1,5 @@
 import unittest
-from models.bucket_list import Bucket_list
+from models.bucket_list import BucketList
 from models.country import Country
 from models.destination import Destination
 
