@@ -1,8 +1,8 @@
 from db.run_sql import run_sql
 
-from models.bucket_list import BucketList
+# from models.bucket_list import BucketList
 from models.country import Country
-from models.destination import Destination
+# from models.destination import Destination
 
 def save(country):
     sql = "INSERT INTO country (name, continent) VALUES (%s, %s) RETURN *"
