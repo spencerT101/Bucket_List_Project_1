@@ -8,6 +8,12 @@ from repositories import destination_repository
 bucket_lists_blueprint = Blueprint("bucket_lists", __name__)
 
 
+@bucket_lists_blueprint.route("/")
+def bucket_lists():
+    bucket_lists = bucket_list_repository.select_all()
+    return render_template(bucket_)
+
+
 
 
 
