@@ -5,7 +5,7 @@ from models.country import Country
 # from models.destination import Destination
 
 def save(country):
-    sql = "INSERT INTO country (name, continent) VALUES (%s, %s) RETURN *"
+    sql = "INSERT INTO countries (name, continent) VALUES (%s, %s) RETURNING *"
     values = [country.name, country.continent]
     results = run_sql(sql, values)
     id = results[0]['id']
@@ -15,10 +15,9 @@ def save(country):
 
 def select_all():
     countries = []
-
     sql = "SELECT * FROM countries"
     results = run_sql(sql)
-
+    
     for row in results:
         country = Country(row(['name'], row['continent'], row['id'])
         countries.append(country)
