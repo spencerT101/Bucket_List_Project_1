@@ -27,6 +27,21 @@ def select(id):
         destination = Destination(result['city_name'], country, result['visited'], result['id'])
     return destination
 
+
+
+def select_all():
+    destinations = []
+    sql = "SELECT * FROM destinations"
+    results = run_sql(sql)
+    
+    for row in results:
+        country = country_repository.select(row['country_id'])
+        destination = Destination(row["city_name"],country, row["visted"], row["id"])
+        destinations.append(destination)
+    return destinations
+
+
+
 def delete_all():
     sql  = "DELETE FROM destinations"
     run_sql(sql)
@@ -40,6 +55,6 @@ def delete(id):
 
 def update(destination):
     sql = "UPDATE destinations SET (city_name, country_id, visited) = (%s, %s, %s) WHERE id = %s"
-    values = [destination.city_name,destination.country.id, destination.visited]
+    values = [destination.city_name, destination.country.id, destination.visited]
     run_sql(sql, values)
     
