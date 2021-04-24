@@ -2,20 +2,24 @@ import pdb
 
 # from models.bucket_list import Bucket_list
 from models.country import Country
-# from models.destination import Destination
+from models.destination import Destination
 
 
-# import repositories.bucket_list_repository as bucket_list
-# import repositories.destination_repository as destination_repository
-import repositories.country_repository as country_repository
+#import repositories.bucket_list_repository as bucket_list
+import repositories.destination_repository as destination_repository
+
+from repositories import country_repository 
 
 # bucket_list_repository.delete_all()
-# destination_repository.delete_all()
+destination_repository.delete_all()
 country_repository.delete_all()
 
 
 country_1 = Country("France","Europe")
 country_repository.save(country_1)
+
+destination_1 = Destination("Paris",country_1)
+destination_repository.save(destination_1)
 
 
 

@@ -11,7 +11,7 @@ CREATE TABLE countries(
 
 CREATE TABLE destinations(
     id SERIAL PRIMARY KEY,
-    name VARCHAR(255),
+    city_name VARCHAR(255),
     visited BOOLEAN,
     country_id INT REFERENCES countries(id)
 );

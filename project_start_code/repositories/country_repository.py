@@ -2,7 +2,7 @@ from db.run_sql import run_sql
 
 # from models.bucket_list import BucketList
 from models.country import Country
-# from models.destination import Destination
+from models.destination import Destination
 
 def save(country):
     sql = "INSERT INTO countries (name, continent) VALUES (%s, %s) RETURNING *"
@@ -13,15 +13,15 @@ def save(country):
     return country
 
 
-def select_all():
-    countries = []
-    sql = "SELECT * FROM countries"
-    results = run_sql(sql)
+# def select_all():
+#     countries = []
+#     sql = "SELECT * FROM countries"
+#     results = run_sql(sql)
     
-    for row in results:
-        country = Country(row(['name'], row['continent'], row['id'])
-        countries.append(country)
-    return countries
+#     for row in results:
+#         country = Country(row(["name"], row["continent"], row["id"])
+#         countries.append(country)
+#     return countries
 
 def select(id):
     country = None
