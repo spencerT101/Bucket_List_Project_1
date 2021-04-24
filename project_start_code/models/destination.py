@@ -4,5 +4,5 @@ class Destination():
         self.city_name = city_name
         self.visited = visited 
         self.country = country
-        # self.country_id = id
+        self.country_id = id
   
