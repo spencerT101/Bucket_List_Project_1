@@ -4,6 +4,8 @@ from models.bucket_list import BucketList
 from models.country import Country
 from models.destination import Destination
 
+import repositories.destination_repository as destination_repository
+
 
 def save(bucket_list):
     sql = "INSERT INTO bucket_lists (destination_id) VALUES (%s) RETURNING *"

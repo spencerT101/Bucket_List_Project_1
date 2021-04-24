@@ -1,17 +1,19 @@
-from flask import Flask, render_template, redirect, request
-from flask import Blueprint
+from flask import Blueprint, Flask, render_template, redirect, request
 
-from repositories import bucket_list_repository
-from repositories import country_repository
-from repositories import destination_repository
+import repositories.bucket_list_repository as bucket_list_repository
+import repositories.country_repository as country_repository
+import repositories.destination_repository as destination_repository
+from models.bucket_list import BucketList
+from models.destination import Destination
+from models.country import Country
 
-bucket_lists_blueprint = Blueprint("bucket_lists", __name__)
+destinations_blueprint = Blueprint("destinations", __name__)
 
 
-@bucket_lists_blueprint.route("/")
-def bucket_lists():
-    bucket_lists = bucket_list_repository.select_all()
-    return render_template(bucket_)
+@destinations_blueprint.route("/destinations")
+def lists():
+    destinations = bucket_list_repository.select_all()
+    return render_template("/destinations/index.html", all_destinations = destinations)
 
 
 
