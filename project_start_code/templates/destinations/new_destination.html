@@ -1,16 +1,17 @@
 {%extends "base.html"%}
 {% block content %}
 
-<form action = "/destinations" method = "post"></form>
+<form action = "/destinations" method = "post">
 <div>
-    <label for = "destination">City: </label>
-    <select id ="destination" name = "destination">
+    <label for = "destination_id">City: </label>
+    <select id ="destination_id" name = "destination_id">
         {% for destination in all_destinations%}
         <option value = {{destination.id}}>
             {{destination.city_name}}, {{destination.country.name}}</option>
         {% endfor %}
     </select>
 </div>
+<button type = "submit">Add City</button>
 </form>
 
 <p> We don't have the country you're looking for? <a href = "/countries/new">CLICK HERE</a></p>

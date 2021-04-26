@@ -24,6 +24,15 @@ def new_list():
     return render_template("destinations/new_destination.html", all_destinations = destination, all_countries = country)
 
 
+@destinations_blueprint.route("/destinations", methods = ['POST'])
+def create_list():
+    destination_name = request.form["destination_id"]
+    destination_id = destination_repository.select(destination_name)
+    destination = BucketList(destination_id)
+    bucket_list_repository.save(destination)
+    return redirect('/destinations')
+
+
 
 @destinations_blueprint.route("/destinations/<id>", methods = ['GET'])
 def show_destination(id):
