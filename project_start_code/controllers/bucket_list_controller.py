@@ -33,10 +33,10 @@ def edit_destination(id):
 @destinations_blueprint.route("/destinations/<id>", methods = ['POST'])
 def update_bucket_list(id):
     new_id = request.form["destination"]
+    # visited = request.form["visited"]
     destination = destination_repository.select(new_id)
     bucket_list = BucketList(destination, id)
     bucket_list_repository.update(bucket_list)
-    # bucket_list_repository.save(bucket_list)
     return redirect('/destinations')
 
 

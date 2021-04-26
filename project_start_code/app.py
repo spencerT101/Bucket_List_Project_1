@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 
 from controllers.bucket_list_controller import destinations_blueprint
+from controllers.destination_controller import destinations_blueprint
 
 
 app = Flask(__name__)
