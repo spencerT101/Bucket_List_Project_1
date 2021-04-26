@@ -1,0 +1,17 @@
+{%extends "base.html"%}
+{% block content %}
+
+
+{% for country in all_countries %} 
+<div>
+    <div>
+       Country: {{country.name}}
+       <br>
+       Continent:{{country.continent}}
+       </div>
+</div>
+{% endfor%}
+
+<p> We don't have the country you're looking for? <a href = "/countries/new">CLICK HERE</a></p>
+
+{% endblock %}
