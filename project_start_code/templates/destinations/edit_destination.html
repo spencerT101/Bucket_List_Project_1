@@ -1,10 +1,17 @@
 {%extends "base.html"%}
 {% block content %}
-<form action = '/destinations/{{bucket_list.id}}' method = "POST">
+<form action = '/destinations/{{bucket_list.id}}' method = "post">
 <div>
     <label for = "destination">Destination: </label>
-    <input type = "text" id = "destination" name
+    <select id ="destination" name = "destination">
+        {% for destination in all_destinations %}
+        <option value = {{destination.id}}
+        {if bucket_list.destination.id == destination.id %} selected = "selected"{endif%}>
+        {{bucket_list.destination.city_name}}
+    </option>
+    {% endfor %}
 </div>
+</select>
 
 </form>
 {% endblock %}

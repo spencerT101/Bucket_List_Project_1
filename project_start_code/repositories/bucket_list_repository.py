@@ -58,6 +58,6 @@ def delete(id):
 
 def update(destination):
     sql = "UPDATE bucket_lists SET (destination_id) = (%s) WHERE id = %s"
-    values = [bucket_list.destination.id]
+    values = [bucket_list.destination.id, bucket_list.id]
     run_sql(sql, values)
     

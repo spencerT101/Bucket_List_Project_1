@@ -23,12 +23,12 @@ def show_destination(id):
     destination = destination_repository.select_all()
     return render_template("destinations/show_destination.html", bucket_list = bucket_list, destination = destination)
 
-@destinations_blueprint.route("destinations/<id>/edit", method = ['GET'])
+@destinations_blueprint.route("/destinations/<id>/edit_destination", methods = ['GET'])
 def edit_destination(id):
     bucket_list = bucket_list_repository.select(id)
     destination = destination_repository.select_all()
     country = country_repository.select_all()
-    return render_template("destinations/edit_destination.html", bucket_list = bucket_list, destination = destination, country = country)
+    return render_template("destinations/edit_destination.html", bucket_list = bucket_list, all_destinations = destination, country = country)
 
 
 
