@@ -5,13 +5,14 @@
     <label for = "destination">Destination: </label>
     <select id ="destination" name = "destination">
         {% for destination in all_destinations %}
-        <option value = {{destination.country.id}}
+        <option value = {{destination.id}}
         {if bucket_list.destination.id == destination.id %} selected = "selected"{endif%}>
         {{destination.city_name}}
     </option>
     {% endfor %}
 </div>
 </select>
-
+<button type = "submit">Update</button>
 </form>
+<p> Country:{{bucket_list.destination.country.name}}</p>
 {% endblock %}

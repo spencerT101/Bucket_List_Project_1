@@ -56,7 +56,7 @@ def delete(id):
     run_sql(sql, values)
     
 
-def update(destination):
+def update(bucket_list):
     sql = "UPDATE bucket_lists SET (destination_id) = (%s) WHERE id = %s"
     values = [bucket_list.destination.id, bucket_list.id]
     run_sql(sql, values)

@@ -30,6 +30,13 @@ def edit_destination(id):
     country = country_repository.select_all()
     return render_template("destinations/edit_destination.html", bucket_list = bucket_list, all_destinations = destination, country = country)
 
+@destinations_blueprint.route("/destinations/<id>", methods = ['POST'])
+def update_bucket_list(id):
+    destination_id = request.form["destination"]
+    destination = destination_repository.select(destination_id)
+    bucket_list = BucketList(destination, id)
+    bucket_list_repository.update(bucket_list)
+    return redirect('/destinations')
 
 
 
