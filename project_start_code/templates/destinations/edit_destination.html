@@ -8,7 +8,7 @@
         <option value = {{destination.id}}
         {% if bucket_list.destination.id == destination.id %} selected = "selected"
         {% endif %}>
-        {{destination.city_name}}</option>
+        {{destination.city_name}}, {{destination.country.name}}</option>
 
         {% endfor %}
     </select>
