@@ -1,0 +1,28 @@
+{%extends "base.html"%}
+{% block content %}
+<form action = "/city" method = "post">
+<div>
+    <label for = "city_name">City</label>
+    <input type = "text" id = "city_name" name = "city_name" placeholder = "city name" required autofocus>
+</div>
+<div>
+    <label for = "visited">Visited</label>
+    <select name = "visited" id = "visited">
+        <option value = "true">True</option>
+        <option value = "false">False</option>
+    </select>
+</div>
+<div>
+    <label for = "country">Country: </label>
+    <select id ="country" name = "country">
+        {% for country in all_countries %}
+        <option value = {{country.id}}>
+            {{country.name}}</option>
+
+        {% endfor %}
+    </select>
+</div>
+<button type = "submit"> Add Task </button>
+</form>
+
+    {% endblock %}

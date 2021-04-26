@@ -17,15 +17,18 @@ def cities():
 
 @city_destinations_blueprint.route("/city/new", methods = ['GET'])
 def new_country():
-    return render_template("city/new.html")
+    country = country_repository.select_all()
+    return render_template("city/new.html", all_countries = country)
 
-# @city_destinations_blueprint.route("/city", methods = ['POST'])
-# def create_country():
-#     country_name = request.form["country_name"]
-#     continent = request.form["continent"]
-#     country = Country(country_name, continent)
-#     country_repository.save(country)
-#     return redirect('/countries')
+@city_destinations_blueprint.route("/city", methods = ['POST'])
+def create_city():
+    city_name = request.form["city_name"]
+    country_id = request.form["country"]
+    visited = request.form["visited"]
+    country = country_repository.select(country_id)
+    city = Destination(city_name, country, visited)
+    destination_repository.save(city)
+    return redirect('/city')
 
 
 
