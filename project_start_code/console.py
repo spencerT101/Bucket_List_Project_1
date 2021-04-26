@@ -31,7 +31,7 @@ bucket_list_1 = BucketList(destination_1)
 bucket_list_repository.save(bucket_list_1)
 
 bucket_list_2 = BucketList(destination_2)
-bucket_list_repository.save(bucket_list_2)
+bucket_list_repository.save(bucket_list_1)
 
 
 

@@ -2,14 +2,18 @@
 {% block content %}
 This is where the list of destinations will appear!
 <br>
-<!-- {% for bucket_list in all_destinations %} --> 
+{% for bucket_list in all_destinations %} 
 <div>
     <div>
-       <!--  {{bucket_list.destination.city_name}}--> 
+       {{bucket_list.destination.city_name}}
         <div>
-       <!--  {{bucket_list.destination.country.name}} --> 
+        Country: {{bucket_list.destination.country.name}}
+        Continent: {{bucket_list.destination.country.continent}}
+        </div>
+        <div>
+            <button><a href = "/destinations/{{bucket_list.id}}">view</a></button>
         </div>       
     </div>
 </div>
-<!--{% endfor %} --> 
+{% endfor %}
 {% endblock %}

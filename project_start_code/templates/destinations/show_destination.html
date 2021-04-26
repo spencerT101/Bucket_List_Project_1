@@ -1,4 +1,11 @@
 {%extends "base.html"%}
 {% block content %}
+<div>
+    <p>Destination {{bucket_list.destination.city_name}}</p>
+    <p>Country: {{bucket_list.destination.country.name}} </p>
+    <p>Continent: {{bucket_list.destination.country.continent}}</p>
+    <p>Visited: {{bucket_list.destination.visited}}</p>
+    <button><a href = "/destinations/{{bucket_list.id}}/edit_destination">Edit</a></button>
+</div>
 
 {% endblock %}
