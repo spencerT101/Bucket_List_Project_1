@@ -14,11 +14,16 @@ This is where the list of destinations will appear!
         <br>
         Continent: {{bucket_list.destination.country.continent}}
         </div>
-        <div>
+
+        <form class = "delete-list" action = "/destinations/{{bucket_list.id}}/delete" method = "post">
+            <button class= "delete">DELETE</button>
+
             <button><a href = "/destinations/{{bucket_list.id}}">view</a></button>
+            </form>
         </div>       
     </div>
 </div>
+
 {% endfor %}
 
 <div>

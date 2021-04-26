@@ -56,5 +56,9 @@ def update_bucket_list(id):
     bucket_list_repository.update(bucket_list)
     return redirect('/destinations')
 
+@destinations_blueprint.route("/destinations/<id>/delete", methods = ['POST'])
+def delete_list(id):
+    bucket_list_repository.delete(id)
+    return redirect('/destinations')
 
 
