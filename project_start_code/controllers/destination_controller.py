@@ -10,6 +10,24 @@ from models.country import Country
 
 city_destinations_blueprint = Blueprint("city_destinations", __name__)
 
+@city_destinations_blueprint.route("/city")
+def cities():
+    cities = destination_repository.select_all()
+    return render_template("city/index.html", all_cities = cities)
+
+@city_destinations_blueprint.route("/city/new", methods = ['GET'])
+def new_country():
+    return render_template("city/new.html")
+
+# @city_destinations_blueprint.route("/city", methods = ['POST'])
+# def create_country():
+#     country_name = request.form["country_name"]
+#     continent = request.form["continent"]
+#     country = Country(country_name, continent)
+#     country_repository.save(country)
+#     return redirect('/countries')
+
+
 
 @city_destinations_blueprint.route("/destinations/<id>/edit_destination", methods = ['GET'])
 def edit_destination(id):

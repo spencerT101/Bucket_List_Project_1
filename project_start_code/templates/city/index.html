@@ -1,0 +1,17 @@
+{%extends "base.html"%}
+{% block content %}
+
+
+{% for city in all_cities%} 
+<div>
+    <div>
+       city: {{city.city_name}}
+       <br>
+       country:{{city.country.name}}
+       </div>
+</div>
+{% endfor%}
+
+<p> Can't find the city you're looking for? <a href = "/city/new">CLICK HERE</a></p>
+
+{% endblock %}
