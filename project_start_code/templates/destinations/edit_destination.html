@@ -9,16 +9,23 @@
         {% if bucket_list.destination.id == destination.id %} selected = "selected"
         {% endif %}>
         {{destination.city_name}}</option>
+
+        {% endfor %}
+    </select>
+</div>
+        <div>
     <label for = "visited"> Visited: </label>
     <select id = "visited" name = "visited">
         <option value = "true"
         {% if bucket_list.destination.visited == True %} selected = "selected" {% endif%}>
-    </option>
-    </select>
-    
-    {% endfor %}
-</div>
+    True</option>
+    <option value = "false"
+    {% if bucket_list.destination.visited == False %} selected = "selected" {% endif%}>
+False </option>
+
 </select>
+</div>
+
 <button type = "submit">Update</button>
 </form>
 <p> Country:{{bucket_list.destination.country.name}}</p>
