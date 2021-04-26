@@ -17,10 +17,10 @@
     <label for = "visited"> Visited: </label>
     <select id = "visited" name = "visited">
         <option value = "true"
-        {% if bucket_list.destination.visited == True %} selected = "selected" {% endif%}>
+        {% if bucket_list.visited == True %} selected = "selected" {% endif%}>
     True</option>
     <option value = "false"
-    {% if bucket_list.destination.visited == False %} selected = "selected" {% endif%}>
+    {% if bucket_list.visited == False %} selected = "selected" {% endif%}>
 False </option>
 
 </select>

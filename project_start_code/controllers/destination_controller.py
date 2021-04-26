@@ -8,4 +8,20 @@ from models.bucket_list import BucketList
 from models.destination import Destination
 from models.country import Country
 
-destinations_blueprint = Blueprint("destinations", __name__)
+city_destinations_blueprint = Blueprint("city_destinations", __name__)
+
+
+@city_destinations_blueprint.route("/destinations/<id>/edit_destination", methods = ['GET'])
+def edit_destination(id):
+    city_id = destination_repository.select(id)
+    destination = destination_repository.select_all()
+    country = country_repository.select_all()
+    return render_template("destinations/edit_destination.html", city_id = city_id, visit_destinations = destination, country = country)
+
+@city_destinations_blueprint.route("/destinations/<id>", methods = ['POST'])
+def update_visited(id):
+    visit = request.form["visited"]
+    visited = destination_repository.select(visit)
+    destination_visit = Destination(visited, id)
+    destination_repository.update(destination_visit)
+    return redirect('/destinations')
