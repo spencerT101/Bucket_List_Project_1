@@ -27,11 +27,15 @@ destination_repository.save(destination_1)
 destination_2 = Destination("Seoul", country_2)
 destination_repository.save(destination_2)
 
+destination_3  = Destination("Lille", country_1)
+
 bucket_list_1 = BucketList(destination_1)
 bucket_list_repository.save(bucket_list_1)
 
 bucket_list_2 = BucketList(destination_2)
-bucket_list_repository.save(bucket_list_1)
+bucket_list_repository.save(bucket_list_2)
+
+
 
 
 
