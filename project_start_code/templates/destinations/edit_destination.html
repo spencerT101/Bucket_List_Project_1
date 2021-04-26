@@ -5,9 +5,9 @@
     <label for = "destination">Destination: </label>
     <select id ="destination" name = "destination">
         {% for destination in all_destinations %}
-        <option value = {{destination.id}}
+        <option value = {{destination.country.id}}
         {if bucket_list.destination.id == destination.id %} selected = "selected"{endif%}>
-        {{bucket_list.destination.city_name}}
+        {{destination.city_name}}
     </option>
     {% endfor %}
 </div>
