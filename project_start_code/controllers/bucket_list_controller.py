@@ -17,6 +17,14 @@ def lists():
     return render_template("destinations/index.html", all_destinations = destinations)
 
 
+@destinations_blueprint.route("/destinations/new", methods = ['GET'])
+def new_list():
+    country = country_repository.select_all()
+    destination = destination_repository.select_all()
+    return render_template("destinations/new_destination.html", all_destinations = destination, all_countries = country)
+
+
+
 @destinations_blueprint.route("/destinations/<id>", methods = ['GET'])
 def show_destination(id):
     bucket_list = bucket_list_repository.select(id)
