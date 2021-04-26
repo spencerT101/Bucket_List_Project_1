@@ -5,9 +5,10 @@ This is where the list of destinations will appear!
 {% for bucket_list in all_destinations %} 
 <div>
     <div>
-       {{bucket_list.destination.city_name}}
+       Destination: {{bucket_list.destination.city_name}}
         <div>
         Country: {{bucket_list.destination.country.name}}
+        <br>
         Continent: {{bucket_list.destination.country.continent}}
         </div>
         <div>

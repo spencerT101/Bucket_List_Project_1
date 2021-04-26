@@ -6,9 +6,16 @@
     <select id ="destination" name = "destination">
         {% for destination in all_destinations %}
         <option value = {{destination.id}}
-        {if bucket_list.destination.id == destination.id %} selected = "selected"{endif%}>
-        {{destination.city_name}}
+        {% if bucket_list.destination.id == destination.id %} selected = "selected"
+        {% endif %}>
+        {{destination.city_name}}</option>
+    <label for = "visited"> Visited: </label>
+    <select id = "visited" name = "visited">
+        <option value = "true"
+        {% if bucket_list.destination.visited == True %} selected = "selected" {% endif%}>
     </option>
+    </select>
+    
     {% endfor %}
 </div>
 </select>
