@@ -32,14 +32,14 @@ def create_city():
 
 
 
-@city_destinations_blueprint.route("/destinations/<id>/edit_destination", methods = ['GET'])
-def edit_destination(id):
+@city_destinations_blueprint.route("/city/<id>/visit", methods = ['GET'])
+def edit_visited(id):
     city_id = destination_repository.select(id)
     destination = destination_repository.select_all()
     country = country_repository.select_all()
-    return render_template("destinations/edit_destination.html", city_id = city_id, visit_destinations = destination, country = country)
+    return render_template("city/edit.html", city_id = city_id, visit_destinations = destination, country = country)
 
-@city_destinations_blueprint.route("/destinations/<id>", methods = ['POST'])
+@city_destinations_blueprint.route("/city/<id>", methods = ['POST'])
 def update_visited(id):
     destination = request.form["destination"]
     visit = request.form["visited"]
