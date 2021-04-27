@@ -26,9 +26,23 @@ body{
     font-family: 'lato', sans-serif;
 }
 
-#title{
+.title{
     font-family:'Rock Salt', cursive, sans-serif ;
     text-align : center;
     font-size: 100px;
+    padding:5px;
+
+}
+.slogan {
+    font-family:'Rock Salt', cursive, sans-serif ;
+    text-align : center;
+    font-size:15px;
+}
+
+.intro{
+    padding:10px;
+    margin:0 auto 50px auto;
+    max-width: 600px;
+    justify-content: center;
 
 }
