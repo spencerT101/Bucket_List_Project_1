@@ -161,6 +161,7 @@ body{
     border:none;
     
 
+
 }
 .edit_destination_button a{
     text-decoration: none;
@@ -170,6 +171,7 @@ body{
 }
 
 .edit_visited_button{
+    margin-top: -20px;
     margin-bottom:10px;
     width:100px;
     margin-left: 160px;
