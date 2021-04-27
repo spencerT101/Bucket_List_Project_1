@@ -5,8 +5,8 @@
     <p>Country: {{bucket_list.destination.country.name}} </p>
     <p>Continent: {{bucket_list.destination.country.continent}}</p>
     <p>Visited: {{bucket_list.destination.visited}}</p>
-    <button class="edit_button"><a href = "/destinations/{{bucket_list.id}}/edit_destination">Edit</a></button>
-    <button><a href = "/city/{{bucket_list.destination.id}}/edit">Visited</a></button>
+    <button class="edit_destination_button"><a href = "/destinations/{{bucket_list.id}}/edit_destination">Edit</a></button>
+    <button class = "edit_visited_button"><a href = "/city/{{bucket_list.destination.id}}/edit">Visited</a></button>
 </div>
 
 {% endblock %}
