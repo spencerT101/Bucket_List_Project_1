@@ -109,3 +109,13 @@ body{
 .entries{
     padding:10px;
 }
+.view_destin_button{
+    background-color: #e5d1b8;
+    border-color: #e5d1b8;
+
+}
+
+.view_destin_button a{
+    text-decoration: none;
+    color:black;
+}
