@@ -90,6 +90,7 @@ body{
     font-family: "lato";
     font-size:18px;
     text-align: center;
+    
 }
 
 .mydestination {
@@ -103,6 +104,7 @@ body{
     justify-content: space-around;
     border-radius: 50px;
     margin-top: 20px;
+    font-family: 'lato', sans-serif ; 
    
 } 
 
@@ -110,12 +112,23 @@ body{
     padding:10px;
 }
 .view_destin_button{
-    background-color: #e5d1b8;
+
     border:none;
+    width:50px;
+    height: 20px;
+    border-radius: 6px;
+    background-color: white;
 
 }
 
 .view_destin_button a{
     text-decoration: none;
     color:black;
+   
+}
+
+.delete{
+    border-radius: 6px;
+    border:none;
+    background-color: #e5d1b8;
 }
