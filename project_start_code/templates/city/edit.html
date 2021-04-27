@@ -1,8 +1,8 @@
 {%extends "base.html"%}
 {% block content %}
 
-<p>Destination:{{destination.city_name}}</p>
-<form action ='/city/{{destination.id}}' method = "post" >
+<p>Destination:{{city.city_name}}</p>
+<form action ='/city/{{city.id}}' method = "post" >
 <div>
 <label for = "visited">Visited</label>
     <select name = "visited" id = "visited">
@@ -10,6 +10,7 @@
         <option value = "false">False</option>
         </select>
     </div>
+    <button action = "submit"> Update</button>
 </form>
 
 {% endblock %}
