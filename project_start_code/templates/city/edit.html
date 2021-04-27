@@ -1,15 +1,15 @@
 {%extends "base.html"%}
 {% block content %}
+
+<p>Destination:{{destination.city_name}}</p>
 <form action ='/city/{{destination.id}}' method = "post" >
-    <label for = "destination_id" > City</label>
-    <select id = "destination_id" name = "destination_id"></select>
-    
-    <option value = "true"
-        {% if destination.visited == True %} selected = "selected" {% endif%}>
-    True</option>
-    <option value = "false"
-    {% if destination.visited == False %} selected = "selected" {% endif%}>
-False </option>
+<div>
+<label for = "visited">Visited</label>
+    <select name = "visited" id = "visited">
+        <option value = "true">True</option>
+        <option value = "false">False</option>
+        </select>
+    </div>
 </form>
 
 {% endblock %}
