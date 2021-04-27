@@ -147,18 +147,19 @@ body{
     position:relative;
     justify-content:center;
     border-radius: 300px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     font-family: 'lato', sans-serif ; 
    
 } 
 
 .edit_destination_button{
-    margin-bottom:10px; 
+    margin-bottom:0px; 
     width:100px;
     margin-left: 160px;
     height:100px;
     border-radius: 100px;
     border:none;
+    
 
 }
 .edit_destination_button a{
@@ -174,5 +175,5 @@ body{
     margin-left: 160px;
     height:100px;
     border-radius: 100px;
-    border:none;
+    border:none; 
 }
