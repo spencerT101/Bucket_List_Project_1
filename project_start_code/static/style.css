@@ -1,5 +1,6 @@
 @import "https://fonts.googleapis.com/css?family=Lato:400,700";
-
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import 'https://fonts.googleapis.com/css2?family=Courgette&family=Rock+Salt&display=swap';
 
 nav{
     background-color: rgba(228, 84, 27, 0.78);
@@ -22,5 +23,12 @@ nav{
 
 
 body{
-    font-family: lato, sans-serif;
+    font-family: 'lato', sans-serif;
+}
+
+#title{
+    font-family:'Rock Salt', cursive, sans-serif ;
+    text-align : center;
+    font-size: 100px;
+
 }
