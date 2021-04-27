@@ -1,0 +1,16 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+
+nav{
+    background-color: rgba(228, 84, 27, 0.78);
+    font-family: lato, sans-serif;
+}
+
+.navbar a{
+    color:white;
+    text-decoration: none;
+}
+
+body{
+    font-family: lato, sans-serif;
+}
