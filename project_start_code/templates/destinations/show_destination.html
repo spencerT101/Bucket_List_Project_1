@@ -1,11 +1,11 @@
 {%extends "base.html"%}
 {% block content %}
-<div>
+<div class =  "show_destination">
     <p>Destination {{bucket_list.destination.city_name}}</p>
     <p>Country: {{bucket_list.destination.country.name}} </p>
     <p>Continent: {{bucket_list.destination.country.continent}}</p>
     <p>Visited: {{bucket_list.destination.visited}}</p>
-    <button><a href = "/destinations/{{bucket_list.id}}/edit_destination">Edit</a></button>
+    <button class="edit_button"><a href = "/destinations/{{bucket_list.id}}/edit_destination">Edit</a></button>
     <button><a href = "/city/{{bucket_list.destination.id}}/edit">Visited</a></button>
 </div>
 
