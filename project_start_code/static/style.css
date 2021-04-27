@@ -30,13 +30,19 @@ body{
     font-family:'Rock Salt', cursive, sans-serif ;
     text-align : center;
     font-size: 100px;
-    padding:5px;
+    padding:0px;
 
 }
 .slogan {
     font-family:'Rock Salt', cursive, sans-serif ;
     text-align : center;
     font-size:15px;
+}
+
+.intro_pic{
+    display:block;
+    justify-content: center;
+    margin:0 auto;
 }
 
 .intro{
