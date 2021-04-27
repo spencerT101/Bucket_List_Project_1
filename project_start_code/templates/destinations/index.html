@@ -6,10 +6,12 @@
 
 <div class = "mydestination">
     <div>
+        <section class= "entries">
        <p>Destination: {{bucket_list.destination.city_name}}</p>
        <p>Visited:{{bucket_list.destination.visited}}</p>
        <p>Country: {{bucket_list.destination.country.name}}</p>
        <p>Continent: {{bucket_list.destination.country.continent}}</p>
+    </section>
         </div>
 
         <form class = "delete-list" action = "/destinations/{{bucket_list.id}}/delete" method = "post">
@@ -17,6 +19,7 @@
 
             <button><a href = "/destinations/{{bucket_list.id}}">view</a></button>
             </form>
+            <br>
         </div>       
     </div>
 </div>

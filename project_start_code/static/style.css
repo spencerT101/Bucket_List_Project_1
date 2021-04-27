@@ -74,12 +74,18 @@ body{
 
 
 .mydestination {
-    flex-direction: column;
-    justify-content: center;
+    display:grid;
+    flex-direction:column;
     text-align:center;
     background-color: blueviolet;
-    max-width: 200px;
+    max-width: 225px;
     margin-left: 100px;
     position:relative;
+    justify-content: space-around;
+    border-radius: 50px;
    
 } 
+
+.entries{
+    padding:10px;
+}
