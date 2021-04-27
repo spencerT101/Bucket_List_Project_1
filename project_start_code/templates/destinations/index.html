@@ -1,18 +1,15 @@
 {%extends "base.html"%}
 {% block content %}
-This is where the list of destinations will appear!
-<br>
+<h2 class = "destintitle">MY DESTINATIONS</h2>
+
 {% for bucket_list in all_destinations %} 
-<div>
+
+<div class = "mydestination">
     <div>
-       Destination: {{bucket_list.destination.city_name}}
-       <br>
-       Visited:{{bucket_list.destination.visited}}
-       
-        <div>
-        Country: {{bucket_list.destination.country.name}}
-        <br>
-        Continent: {{bucket_list.destination.country.continent}}
+       <p>Destination: {{bucket_list.destination.city_name}}</p>
+       <p>Visited:{{bucket_list.destination.visited}}</p>
+       <p>Country: {{bucket_list.destination.country.name}}</p>
+       <p>Continent: {{bucket_list.destination.country.continent}}</p>
         </div>
 
         <form class = "delete-list" action = "/destinations/{{bucket_list.id}}/delete" method = "post">

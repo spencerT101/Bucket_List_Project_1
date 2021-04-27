@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 @import 'https://fonts.googleapis.com/css2?family=Courgette&family=Rock+Salt&display=swap';
 
+
+
+/*  CSS styling for home page */
 nav{
     background-color: rgba(228, 84, 27, 0.78);
     font-family: lato, sans-serif;
@@ -58,3 +61,25 @@ body{
     font-size: 20px;
 
 }
+
+
+/*  CSS styling for mydestination/index.html */
+
+.destintitle{
+    font-family:'Rock Salt', cursive, sans-serif ;
+    text-align : center;
+    font-size: 50px;
+    padding:0px;
+}
+
+
+.mydestination {
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+    background-color: blueviolet;
+    max-width: 200px;
+    margin-left: 100px;
+    position:relative;
+   
+} 
