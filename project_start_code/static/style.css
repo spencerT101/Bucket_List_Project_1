@@ -79,10 +79,11 @@ body{
     text-align:center;
     background-color: blueviolet;
     max-width: 225px;
-    margin-left: 100px;
+    margin-left: 42%;
     position:relative;
     justify-content: space-around;
     border-radius: 50px;
+    margin-top: 20px;
    
 } 
 
