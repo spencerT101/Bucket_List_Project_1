@@ -75,17 +75,22 @@ body{
 .new_destin_button{
     flex-direction:row;
     justify-content: center;
-    margin-left: 45%;
-    width: 140px;
+    margin-left: 44.5%;
+    width: 150px;
     height: 150px;
     background-color:rgba(255, 123, 46, 0.8);
     border-radius: 100px;
-    
-    
-   
-
+    border-color: rgba(255, 123, 46, 0.8);
+    margin-bottom: 10px;
+ 
 }
-
+.new_destin_button a{
+    text-decoration: none;
+    color: black;
+    font-family: "lato";
+    font-size:18px;
+    text-align: center;
+}
 
 .mydestination {
     display:grid;
