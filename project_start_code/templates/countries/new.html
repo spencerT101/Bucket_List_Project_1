@@ -1,14 +1,14 @@
 {%extends "base.html"%}
 {% block content %}
 <form action = "/countries" method = "post">
-<divclass class = "add_country">
+<div  class = "add_country">
 <div>
     <label for = "country_name">Country</label>
-    <input type = "text" id = "country_name" name = "country_name" placeholder = "country_name" required autofocus>
-</div>
-<div>
+    <input type = "text" id = "country_name" class="country_info" name = "country_name" placeholder = "country name" required autofocus>
+
+
     <label for = "continent">Continent</label>
-    <input type = "text" id = "continent" name = "continent" placeholder = "continent" required >
+    <input type = "text" id = "continent" class="country_info" name = "continent" placeholder = "continent" required >
 </div>
 <button type = "submit"> Add Country</button>
 </div>
