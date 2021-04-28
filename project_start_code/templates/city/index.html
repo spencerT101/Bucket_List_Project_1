@@ -1,7 +1,7 @@
 {%extends "base.html"%}
 {% block content %}
-
-
+<h3></h3>
+<p class = "redirect"> Can't find the city you're looking for? <button><a href = "/city/new">CLICK HERE</a></button></p>
 {% for city in all_cities%} 
 <div>
     <div class = "city-page">
@@ -11,6 +11,5 @@
 </div>
 {% endfor%}
 
-<p> Can't find the city you're looking for? <a href = "/city/new">CLICK HERE</a></p>
 
 {% endblock %}
