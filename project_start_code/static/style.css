@@ -135,6 +135,13 @@ body{
 
 /* CSS styling for destinations/showdestination  */
 
+.view-title {
+    font-family:'Rock Salt', cursive, sans-serif ;
+    text-align : center;
+    font-size: 50px;
+    padding:0px;
+}
+
 .show_destination {
     display:flex;
     flex-direction:column;
@@ -159,7 +166,7 @@ body{
     height:100px;
     border-radius: 100px;
     border:none;
-    background-color:rgba(255, 56, 56, 0.47)
+    background-color: rgba(107, 233, 255, 0.7);
     
 
 
@@ -179,11 +186,15 @@ body{
     height:100px;
     border-radius: 100px;
     border:none; 
-    background-color: rgba(107, 233, 255, 0.7);
+    background-color:rgba(255, 56, 56, 0.47)
 }
+
+
 .edit_visited_button a{
     text-decoration: none;
     color: black;
     font-family: 'lato';
     font-size: 15px;
 }
+
+
