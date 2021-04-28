@@ -425,3 +425,27 @@ text-align:center;
 
 
 }
+
+/* css styling for countries page */
+.flexcontainer{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    background-color:rgba(255, 123, 46, 0.8);
+    max-width: 225px; 
+    margin-left: 42%;
+    position:relative; 
+    justify-content:space-around;  
+    border-radius: 120px; 
+    margin-top: 30px; 
+    font-family: 'lato', sans-serif; 
+    height: 220px;
+
+   
+} 
+
+.country_button{
+    border:none; 
+}
+
+
