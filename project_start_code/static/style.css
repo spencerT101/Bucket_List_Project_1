@@ -215,5 +215,23 @@ body{
     font-family: 'lato', sans-serif ;    
 }
 
+.update_dest_button{
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'lato';
+    background-color: burlywood;
+    height: 30px;
+    width:60px;
+    border: none;
+    margin-left: 70px;
+    margin-top:20px;
+    
+}
+#destination{
+    width:180px;
+    margin-left:10px;
+
+}
+
 
 
