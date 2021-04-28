@@ -1,18 +1,17 @@
 {%extends "base.html"%}
 {% block content %}
+<h3 class = "visited_title"> add your city!</h3>
 <form action = "/city" method = "post">
 <div class = "add_city">
     <label for = "city_name">City</label>
     <input type = "text" id = "city_name" class="city_info" name = "city_name" placeholder = "city name" required autofocus>
-<!-- </div> -->
-<!-- <div> -->
+
     <label for = "visited">Visited</label>
     <select name = "visited" id = "visited_city">
         <option value = "true">True</option>
         <option value = "false">False</option>
     </select>
-<!-- </div> -->
-<!-- <div> -->
+
     <label for = "country">Country </label>
     <select id ="country" name = "country" class="city_info">
         {% for country in all_countries %}
@@ -21,11 +20,8 @@
 
         {% endfor %}
     </select>
-    <button type = "submit"> Add Task </button>
+    <button type = "submit"> Add City </button>
     </div>
-    
-
-<button type = "submit"> Add Task </button>
 </form>
 
     {% endblock %}
