@@ -468,11 +468,11 @@ text-align:center;
 
 footer{
     background-color: rgba(228, 84, 27, 0.78);
-    height:70px;
+    height:50px;
     color:white;
     
 }
 footer > p{
-    padding:40px;
+   
     padding-bottom:40px;
 }
