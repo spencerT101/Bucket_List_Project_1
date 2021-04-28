@@ -77,6 +77,16 @@ body{
     font-size: 12px;
 }
 
+#review-2{
+    text-align:end;
+    margin-top: -40px;
+}
+
+#review-3{
+    text-align: center;
+    margin-top: 10px;
+}
+
 
 /*  CSS styling for mydestination/index.html */
 
