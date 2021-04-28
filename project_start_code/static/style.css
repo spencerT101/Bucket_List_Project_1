@@ -205,15 +205,14 @@ body{
     text-align:center;
     background-color:rgba(255, 123, 46, 0.8);
     height: 400px;
-    width: 600px;
-    margin-left: 35%;
-    margin-top: 20px;
+    width: 200px;
+    margin-left: 42%;
+    margin-top: 30px;
     position:relative;
     justify-content:center;
-    border-radius: 300px;
+    border-radius: 1000px;
     padding-bottom: 30px;
-    font-family: 'lato', sans-serif ; 
-   
+    font-family: 'lato', sans-serif ;    
 }
 
 
