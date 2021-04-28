@@ -1,7 +1,7 @@
 {%extends "base.html"%}
 {% block content %}
 <form action = '/destinations/{{bucket_list.id}}' method = "post">
-<div>
+<div class = "change_destination">
     <label for = "destination">Destination: </label>
     <select id ="destination" name = "destination">
         {% for destination in all_destinations %}
