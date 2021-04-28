@@ -395,7 +395,11 @@ text-align:center;
 }
 
 .city_info{
-    height: 15px;
+    height: 30px;
+    margin-top: -30px;
+    text-align: center;
+    border:none;
+    border-radius: 5px;
 }
 
 #visited_city{
@@ -405,4 +409,5 @@ text-align:center;
     text-align:center;
     border:none;
     border-radius: 5px;
+    margin-top:-30px;
 }
