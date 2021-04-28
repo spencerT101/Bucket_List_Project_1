@@ -134,7 +134,33 @@ body{
 }
 
 /* CSS styling for new destination page */
-
+.add_destination{
+    display:grid;
+    flex-direction:column;
+    text-align:center;
+    background-color:rgba(255, 123, 46, 0.8);
+    max-width: 225px;
+    height:150px;
+    margin-left: 42%;
+    position:relative;
+    justify-content: space-around;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-family: 'lato', sans-serif ; 
+    padding:10px;
+}
+#destination_id{
+    border:none;
+    border-radius: 40px;
+}
+.add_destination button{
+    margin-top: 10px;
+    height:30px;
+    width: 140px;
+    margin-left: 30px;
+    border-radius: 30px;
+    border:none;
+}
 
 
 /* CSS styling for destinations/showdestination  */
@@ -200,6 +226,8 @@ body{
     font-family: 'lato';
     font-size: 15px;
 }
+
+
 
 /* css styling for edit bucket list destination page */
 
