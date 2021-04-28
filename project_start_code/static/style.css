@@ -355,8 +355,8 @@ background-color:  rgba(107, 233, 255, 0.7);
     font-family: 'lato', sans-serif ; 
     padding:20px;
     padding-top: 40px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     
 }
 .country_info {
@@ -448,4 +448,18 @@ text-align:center;
     border:none; 
 }
 
+/* CSS styling for city page */
 
+.city-page{
+   display:flex;
+   flex-direction: column;
+   padding-bottom:10px;
+   justify-content: space-around;
+   background-color:rgba(255, 123, 46, 0.8);
+   margin:20px;
+   max-width: 350px;
+   text-align: center;
+   border-radius: 50%;
+   margin-left:42%;
+
+}

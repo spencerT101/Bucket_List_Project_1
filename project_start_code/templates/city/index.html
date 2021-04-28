@@ -4,10 +4,9 @@
 
 {% for city in all_cities%} 
 <div>
-    <div>
-       city: {{city.city_name}}
-       <br>
-       country:{{city.country.name}}
+    <div class = "city-page">
+       <p>city: {{city.city_name}}</p>
+       <p>country:{{city.country.name}}</p>
        </div>
 </div>
 {% endfor%}
