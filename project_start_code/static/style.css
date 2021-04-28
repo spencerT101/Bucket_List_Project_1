@@ -133,6 +133,10 @@ body{
     background-color: #e5d1b8;
 }
 
+/* CSS styling for new destination page */
+
+
+
 /* CSS styling for destinations/showdestination  */
 
 .view-title {
@@ -243,6 +247,12 @@ body{
 }
 
 /* CSS styling for update visited status */
+.visited_title{
+    font-family:'Rock Salt', cursive, sans-serif ;
+    text-align : center;
+    font-size: 40px;
+    padding:0px;
+}
 
 .visited_status{
     display:grid;
@@ -250,7 +260,7 @@ body{
     text-align:center;
     background-color:rgba(255, 123, 46, 0.8);
     width: 300px;
-    margin-left: 42%;
+    margin-left: 38%;
     padding-top:30px;
     position:relative;
     justify-content: space-around;
@@ -259,6 +269,18 @@ body{
     font-family: 'lato', sans-serif;
     height:125px;
 } 
+.visited_status label{
+    padding-right:10px;
+}
+
+#visited{
+    height: 33px;
+    width: 53px;
+    border:none;
+    border-radius: 50%;
+    
+    
+}
 .visited_status > button{
 margin-bottom: 10px;
 border-radius: 50%;

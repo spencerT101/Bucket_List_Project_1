@@ -1,7 +1,7 @@
 {%extends "base.html"%}
 {% block content %}
 
-<p>Destination:{{city.city_name}}</p>
+<p class = "visited_title">Have you visited {{city.city_name}}?</p>
 <form action ='/city/{{city.id}}' method = "post" class = "visited_status">
 <div>
 <label for = "visited">Visited</label>
