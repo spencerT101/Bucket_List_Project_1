@@ -375,3 +375,34 @@ text-align:center;
   
 }
 
+/* css styling to for add city page */
+
+.add_city{
+    display:grid;
+    flex-direction:column;
+    text-align:center;
+    justify-content: center;
+    background-color:rgba(255, 123, 46, 0.8);
+    width: 200px;
+    height:400px;
+    margin-left: 40%;
+    position:relative;
+    border-radius: 400px;
+    margin-top: 20px;
+    font-family: 'lato', sans-serif ; 
+    padding:20px;
+    padding-top: 40px;
+}
+
+.city_info{
+    height: 15px;
+}
+
+#visited_city{
+    width: 70px;
+    height: 30px;
+    margin-left: 40px;
+    text-align:center;
+    border:none;
+    border-radius: 5px;
+}
