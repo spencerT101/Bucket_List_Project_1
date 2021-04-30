@@ -6,7 +6,7 @@ from models.destination import Destination
 
 class TestBucketList(unittest.TestCase):
     def setUp(self):
-        self.bucket_list1 = Bucket_list("Paris")
+        self.bucket_list1 = BucketList("Paris")
     
 
     def test_list_has_destination(self):

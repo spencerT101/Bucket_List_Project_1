@@ -14,6 +14,16 @@ def save(country):
 
 
 def select_all():
+
+#select all the countries in the database
+#create a countries list
+# Set the sql command to select all values from countries table and store in sql variable.
+# run the sql function and store in variable called 'results'
+#create a FOR loop to get country data and store in the countries list.
+# Call the country class to take the row 'name', the row 'continent' and row 'id' and store in country variable.
+#append these values in the countries list.
+# return the list of all countries.
+
     countries = []
     sql = "SELECT * FROM countries"
     results = run_sql(sql)

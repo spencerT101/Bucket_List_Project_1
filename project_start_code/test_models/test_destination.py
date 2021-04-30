@@ -3,8 +3,8 @@ from models.destination import Destination
 
 class TestDestination(unittest.TestCase):
     def setUp(self):
-        self.paris = Destination("Paris", False, "France")
-        self.madrid = Destination("Madrid", True, "Spain")
+        self.paris = Destination("Paris", "France", False, 1)
+        self.madrid = Destination("Madrid","Spain", True, 2)
     
     def test_destination_has_city_name(self):
         self.assertEqual("Paris", self.paris.city_name)
