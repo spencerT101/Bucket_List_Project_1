@@ -20,6 +20,14 @@ Flask
 Postgres SQL
 Python
 
+To run application, in terminal type:
+
+flask run
+
+To open application in browser type url:
+http://localhost:5000/
+
+
 
 
 
