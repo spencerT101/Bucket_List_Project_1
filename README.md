@@ -17,7 +17,9 @@ I decided to name my app NOMADIST, to keep it in tune with current fashions and 
 
 Dependencies/Libraries/Packages
 Flask
+
 Postgres SQL
+
 Python
 
 To run application, in terminal type:
