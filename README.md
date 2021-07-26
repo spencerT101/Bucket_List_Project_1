@@ -63,15 +63,18 @@ A form allowing users to add a new city to the city list.
 
 
 # Dependencies/Libraries/Packages
--Flask
--Postgres SQL
--Python3
--Jinja
+- Flask
+- Postgres SQL
+- Python3
+- Jinja
 
-To run application, clone the repository,in folder "project_start_code" type "flask run" in terminal. Alternatively, to view the code, open in your desired code editor, e.g Visual Studio code.
+## To run application: 
 
-To open application in browser type url:
-localhost:5000
+- Clone the repository
+- Go to "project_start_code" folder 
+- Type "flask run" in terminal. 
+- Alternatively, to view the code, open in your desired code editor, e.g Visual Studio code.
+- To open application in browser type url localhost:5000
 
 
 
